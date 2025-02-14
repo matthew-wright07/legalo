@@ -1,6 +1,6 @@
 export default function Footer(){
     return (
-        <div className="flex px-24 py-4 justify-between border-t">
+        <div className="flex px-24 py-16 justify-between">
             <a className="flex gap-2 items-center justify-center" href="/">
                 <img
                 src="/logo.png"

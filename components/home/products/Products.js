@@ -2,7 +2,9 @@ import Card from "./Card"
 
 export default function Products(){
     return(
-        <div className="grid grid-cols-4 px-24">
+        <div className="flex flex-col px-24 py-16 gap-12">
+        <h1 className="text-4xl font-bold text-primary text-center">Our Products</h1>
+        <div className="grid grid-cols-4">
             <Card heading="Cookie Generator" description="Why cookies are the best" src="/cookie.png"/>
             <Card heading="Terms Of Service Generator" description="Why Terms are the best" src="/terms.png"/>
             <Card heading="Subscription Generator" description="Why subscriptions are the best" src="/subscriptions.png"/>
@@ -11,6 +13,7 @@ export default function Products(){
             <Card heading="Privacy Policy Generator" description="Why privay policies are the best" src="/privacy.png"/>
             <Card heading="Acceptable Use Generator" description="Why acceptable uses are the best" src="/acceptable.png"/>
             <Card heading="Returns & Refunds Generator" description="Why returns and refunds are the best" src="/returns.png"/>
+        </div>
         </div>
     )
 }
