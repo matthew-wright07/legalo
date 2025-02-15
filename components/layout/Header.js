@@ -1,6 +1,7 @@
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import DropDown from "./dropdown/DropDown";
+import UserDropDown from "./userDropdown/UserDropDown";
 
 export default async function Header() {
     const cookieStore = await  cookies(); // Get the cookies first
@@ -24,29 +25,14 @@ export default async function Header() {
       </ul>
       <div className="flex gap-4 justify-center items-center">
         {data?.user ? (
-          <div className="flex gap-2 items-center justify-center">
-          <span className="text-white bg-primary w-10 h-10 flex items-center justify-center rounded-lg text-xl">
-            {data.user.email[0].toUpperCase()}
-          </span>
-          <a href="https://billing.stripe.com/p/login/test_00gdUWd7F9Gmdd6288">
-          <svg
-            className={`w-4 h-4 rotate-90 group-hover:text-primary`}
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-          </div>
+          <UserDropDown data={data}/>
         ) : (
           <>
+            <a className="border border-primary h-10 w-20 flex items-center justify-center text-primary rounded-lg hover:border-hover hover:text-hover" href="/signUp">
+              Sign Up
+            </a>
             <a className="bg-primary h-10 w-20 flex items-center justify-center text-white rounded-lg hover:bg-hover" href="/signIn">
               Sign In
-            </a>
-            <a className="bg-primary h-10 w-20 flex items-center justify-center text-white rounded-lg hover:bg-hover" href="/signUp">
-              Sign Up
             </a>
           </>
         )}

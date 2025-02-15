@@ -1,6 +1,18 @@
 import * as functions from "@/utils/FormGenerators";
+import { cookies } from "next/headers";
+import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 
 export async function POST(req){
+    const cookieStore = await cookies();
+    try{
+    const supabase = createServerComponentClient({ cookies: () => cookieStore });
+    const user = await supabase.auth.getUser();
+    const email = user.data.user.email;
+
+    const isAuthResponse = await supabase.from("Paying").select("*").eq("email", email).single(); 
+    const isAuth = isAuthResponse.data.paying;
+
+    if (isAuth===true){
     const data = await req.json();
     const route = data.route;
     if (route==="Acceptable Use Policy Generator"){
@@ -21,4 +33,10 @@ export async function POST(req){
     else if (route==="Terms of Service Generator"){
         return new Response(JSON.stringify(functions.generateTermsOfService(data.data)))
     }
+}else{
+    return new Response(JSON.stringify({body:"/pricing"}))
+}
+}catch{
+    return new Response(JSON.stringify({body:"/pricing"}))
+}
 }

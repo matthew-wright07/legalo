@@ -1,10 +1,12 @@
 "use client"
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Form({data,formName}){
     const [done,setDone] = useState(false)
     const [response,setResponse] = useState("")
+    const router = useRouter();
     async function handleSubmit(event){
         event.preventDefault();
         const formData = new FormData(event.target);
@@ -14,11 +16,17 @@ export default function Form({data,formName}){
             body:JSON.stringify({route:formName,data:formObject})
         })
         const usable = await response.json();
-        setResponse(usable)
-        setDone(true);
+        console.log("Usable Response:", usable);
+        if (usable.body!=="/pricing"){
+            setResponse(usable)
+            setDone(true);
+        }else{
+            router.push("/pricing")
+        }
+        
     }
     return (
-        <div className="h-[70vh] flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
         {!done?
         <form onSubmit={handleSubmit} className="w-4/5 px-24 p-4 flex flex-col gap-4 justify-center items-center">
         <h1 className="text-xl font-bold">{formName}</h1>
