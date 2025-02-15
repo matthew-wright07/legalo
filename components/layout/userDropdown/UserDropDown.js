@@ -10,7 +10,8 @@ export default function UserDropDown({data}){
         })
     }
     return(
-        <div onClick={handleClick} className="flex gap-2 items-center justify-center rounded-lg hover:cursor-pointer">
+        <div className="flex gap-2 items-center justify-center rounded-lg">
+          <div  onClick={handleClick} className="hover:cursor-pointer flex gap-2 items-center justify-center rounded-lg">
           <span className="text-white bg-primary w-10 h-10 flex items-center justify-center rounded-lg text-xl">
             {data.user.email[0].toUpperCase()}
           </span>
@@ -23,10 +24,13 @@ export default function UserDropDown({data}){
             >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
+          </div>
           {clicked?
-          <div className="absolute top-20 bg-white w-32 h-48 shadow-md rounded-b-lg flex flex-col items-center text-primary">
-            <a>Account</a>
-            <a>Payments</a>
+          <div className="absolute top-20 bg-white w-32 h-48 shadow-md rounded-b-lg flex flex-col items-center text-primary justify-between">
+            <a className="hover:bg-background w-full flex justify-center items-center h-1/4" href="">Settings</a>
+            <a className="hover:bg-background w-full flex justify-center items-center h-1/4" href="">Subscriptions</a>
+            <a className="hover:bg-background w-full flex justify-center items-center h-1/4" href="">About</a>
+            <a className="hover:bg-background w-full flex justify-center items-center h-1/4" href="">Sign Out</a>
           </div>
           :
           null
