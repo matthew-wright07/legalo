@@ -2,8 +2,8 @@ import FeaturedIn from "@/components/home/FeatuedIn"
 import Intro from "@/components/home/Intro"
 import Products from "@/components/home/products/Products"
 import Ready from "@/components/home/Ready"
-import Stats from "@/components/general/Stats"
-import WhyUs from "@/components/general/WhyUs"
+import Stats from "@/components/home/Stats"
+import WhyUs from "@/components/home/WhyUs"
 
 export default function home(){
   return(
