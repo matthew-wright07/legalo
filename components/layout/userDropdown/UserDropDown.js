@@ -26,11 +26,10 @@ export default function UserDropDown({data}){
           </svg>
           </div>
           {clicked?
-          <div className="absolute top-20 bg-white w-32 h-48 shadow-md rounded-b-lg flex flex-col items-center text-primary justify-between">
-            <a className="hover:bg-background w-full flex justify-center items-center h-1/4" href="">Settings</a>
-            <a className="hover:bg-background w-full flex justify-center items-center h-1/4" href="">Subscriptions</a>
-            <a className="hover:bg-background w-full flex justify-center items-center h-1/4" href="">About</a>
-            <a className="hover:bg-background w-full flex justify-center items-center h-1/4" href="">Sign Out</a>
+          <div className="absolute top-20 bg-white w-32 h-32 shadow-md rounded-b-lg flex flex-col items-center text-primary justify-between">
+            <a className="hover:bg-background w-full flex justify-center items-center h-1/3" href="">Settings</a>
+            <a className="hover:bg-background w-full flex justify-center items-center h-1/3" href="">Payments</a>
+            <a className="hover:bg-background w-full flex justify-center items-center h-1/3" href="">Sign Out</a>
           </div>
           :
           null

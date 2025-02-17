@@ -11,7 +11,13 @@ export async function POST(req){
         { email: email, paying: true },
     ])
     .select()
-    console.log(data)
+    }else if (request.type==="invoice.canceled"){
+        const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+        const email = request.data.object.customer_email;
+        const { data, error } = await supabase
+            .from('Paying')
+            .delete()
+            .eq('email', email);
     }
     return new Response("Done")
 }
