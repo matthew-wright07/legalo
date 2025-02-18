@@ -25,10 +25,13 @@ export default function Form({data,formName}){
         }
         
     }
+    function back(){
+        setDone(false)
+    }
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center h-[70vh]">
         {!done?
-        <form onSubmit={handleSubmit} className="w-4/5 px-24 p-4 flex flex-col gap-4 justify-center items-center">
+        <form onSubmit={handleSubmit} className="w-4/5 px-24 p-4 flex flex-col gap-8 justify-center items-center">
         <h1 className="text-xl font-bold">{formName}</h1>
         <div className="rounded-lg w-full gap-4 grid grid-cols-2">
             {data.map(current=>{
@@ -38,8 +41,11 @@ export default function Form({data,formName}){
         <button className="w-1/2 bg-primary text-white h-10 rounded-lg hover:bg-hover">Submit</button>
         </form>
         :
-        <div className="h-[70vh] w-4/5 px-24 flex flex-col gap-4 justify-center items-center overflow-y-scroll">
+        <div className="h-[70vh] w-4/5 px-24 flex flex-col gap-4 justify-center items-center">
+            <div className="w-3/4 h-3/4 bg-background rounded-lg overflow-y-scroll p-4">
             <p className="h-full whitespace-break-spaces">{response}</p>
+            </div>
+            <button onClick={back} className="w-1/2 h-10 bg-primary rounded-lg text-white">Back</button>
         </div>
         }
         </div>
