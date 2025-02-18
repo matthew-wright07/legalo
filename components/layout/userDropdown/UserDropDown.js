@@ -1,13 +1,21 @@
 "use client"
 
 import { useState } from "react";
+import { useRouter } from 'next/navigation';
 
 export default function UserDropDown({data}){
+    const router = useRouter();
     const [clicked,setClicked] = useState(false)
     function handleClick(){
         setClicked(prev=>{
             return !prev;
         })
+    }
+    async function signOut(){
+      const data = await fetch("/api/signOut");
+      router.push("/")
+      router.refresh();
+      
     }
     return(
         <div className="flex gap-2 items-center justify-center rounded-lg">
@@ -27,9 +35,8 @@ export default function UserDropDown({data}){
           </div>
           {clicked?
           <div className="absolute top-20 bg-white w-32 h-32 shadow-md rounded-b-lg flex flex-col items-center text-primary justify-between">
-            <a className="hover:bg-background w-full flex justify-center items-center h-1/3" href="">Settings</a>
-            <a className="hover:bg-background w-full flex justify-center items-center h-1/3" href="">Payments</a>
-            <a className="hover:bg-background w-full flex justify-center items-center h-1/3" href="">Sign Out</a>
+            <a className="hover:bg-background w-full flex justify-center items-center h-1/2" href="https://billing.stripe.com/p/login/test_00gdUWd7F9Gmdd6288">Settings</a>
+            <button className="hover:bg-background w-full flex justify-center items-center h-1/2" onClick={signOut}>Sign Out</button>
           </div>
           :
           null

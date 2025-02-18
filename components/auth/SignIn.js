@@ -1,8 +1,10 @@
 "use client"
 
 import { useState } from "react";
+import { useRouter } from 'next/navigation';
 
 export default function SignIn(){
+    const router = useRouter();
     const [data, setData] = useState({
         email:"",
         password:"",
@@ -17,6 +19,8 @@ export default function SignIn(){
             method:"POST",
             body:JSON.stringify(data)
         })
+        router.push("/")
+        router.refresh();
     }
     return(
         <div className="h-[70vh] flex items-center justify-center flex-col gap-4">
