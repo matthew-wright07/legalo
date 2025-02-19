@@ -29,9 +29,9 @@ export default function Form({data,formName}){
         setDone(false)
     }
     return (
-        <div className="flex flex-col justify-center items-center h-[70vh]">
+        <div className="flex flex-col justify-center items-center">
         {!done?
-        <form onSubmit={handleSubmit} className="w-4/5 px-24 p-4 h-[70vh] flex flex-col gap-8 justify-center items-center">
+        <form onSubmit={handleSubmit} className="w-4/5 px-24 p-4 py-24 flex flex-col gap-8 justify-center items-center">
         <div className="w-3/4 h-5/6 border border-background rounded-lg p-4 flex flex-col gap-8 justify-center items-center">
         <h1 className="text-xl font-bold">{formName}</h1>
         <div className="rounded-lg w-full flex flex-col gap-4 items-center">
@@ -43,7 +43,7 @@ export default function Form({data,formName}){
         </div>
         </form>
         :
-        <div className="h-[70vh] w-4/5 px-24 flex flex-col gap-4 justify-center items-center">
+        <div className="w-4/5 px-24 flex flex-col gap-4 justify-center items-center py-24">
             <h1 className="text-xl font-bold">{formName}</h1>
             <div className="w-3/4 h-5/6 border border-background rounded-lg overflow-y-scroll p-8">
             <p className="h-full whitespace-break-spaces">{response}</p>

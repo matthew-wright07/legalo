@@ -31,7 +31,7 @@ export default function Contact(){
         })
     }
     return (
-        <div className="h-[70vh] w-full flex flex-col items-center justify-center gap-8">
+        <div className="w-full flex flex-col items-center justify-center gap-8 py-8">
             <form onSubmit={handleSubmit} className=" w-1/2 flex flex-col items-center justify-center gap-8 border border-background rounded-lg px-4 py-8">
             <div className="text-center flex flex-col items-center gap-4">
             <h1 className="text-4xl font-bold">Contact</h1>
