@@ -31,18 +31,21 @@ export default function Form({data,formName}){
     return (
         <div className="flex flex-col justify-center items-center h-[70vh]">
         {!done?
-        <form onSubmit={handleSubmit} className="w-4/5 px-24 p-4 flex flex-col gap-8 justify-center items-center">
+        <form onSubmit={handleSubmit} className="w-4/5 px-24 p-4 h-[70vh] flex flex-col gap-8 justify-center items-center">
+        <div className="w-3/4 h-5/6 border border-background rounded-lg p-4 flex flex-col gap-8 justify-center items-center">
         <h1 className="text-xl font-bold">{formName}</h1>
-        <div className="rounded-lg w-full gap-4 grid grid-cols-2">
+        <div className="rounded-lg w-full flex flex-col gap-4 items-center">
             {data.map(current=>{
-                return <div className="flex flex-col" key={current.id}><label htmlFor={current.id}>{current.name}</label><input required name={current.id} className="h-10 border border-primary rounded-lg px-2 text-black w-full" id={current.id}/></div>
+                return <div className="flex flex-col w-1/2" key={current.id}><label htmlFor={current.id}>{current.name}</label><input required name={current.id} className="h-10 border border-primary rounded-lg px-2 text-black w-full" id={current.id}/></div>
             })}
         </div>
         <button className="w-1/2 bg-primary text-white h-10 rounded-lg hover:bg-hover">Submit</button>
+        </div>
         </form>
         :
         <div className="h-[70vh] w-4/5 px-24 flex flex-col gap-4 justify-center items-center">
-            <div className="w-3/4 h-3/4 bg-background rounded-lg overflow-y-scroll p-4">
+            <h1 className="text-xl font-bold">{formName}</h1>
+            <div className="w-3/4 h-5/6 border border-background rounded-lg overflow-y-scroll p-8">
             <p className="h-full whitespace-break-spaces">{response}</p>
             </div>
             <button onClick={back} className="w-1/2 h-10 bg-primary rounded-lg text-white">Back</button>

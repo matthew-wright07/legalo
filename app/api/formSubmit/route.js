@@ -9,7 +9,7 @@ export async function POST(req){
     const user = await supabase.auth.getUser();
     const email = user.data.user.email;
 
-    const isAuthResponse = await supabase.from("Paying").select("*").eq("email", email).single(); 
+    const isAuthResponse = await supabase.from("Paying").select("*").ilike("email", email).single(); 
     const isAuth = isAuthResponse.data.paying;
 
     if (isAuth===true){

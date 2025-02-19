@@ -32,12 +32,12 @@ export default function Contact(){
     }
     return (
         <div className="h-[70vh] w-full flex flex-col items-center justify-center gap-8">
-            <form onSubmit={handleSubmit} className="w-full flex flex-col items-center justify-center gap-8">
+            <form onSubmit={handleSubmit} className=" w-1/2 flex flex-col items-center justify-center gap-8 border border-background rounded-lg px-4 py-8">
             <div className="text-center flex flex-col items-center gap-4">
             <h1 className="text-4xl font-bold">Contact</h1>
             <p className="w-1/2 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie facilisis velit. Duis non tellus blandit, auctor elit sit amet, pretium odio. Sed rhoncus, orci vel tincidunt congue.</p>
             </div>
-            <div className="flex flex-col w-1/3 gap-4">
+            <div className="flex flex-col w-3/4 gap-4">
             <div className="flex flex-col gap-2">
             <label htmlFor="email">Email</label>
             <input value={data.email} onChange={handleChange} id="email" type="email" className="border border-primary rounded-lg h-10 text-black p-2"/>

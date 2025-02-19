@@ -5,14 +5,9 @@ export default function Disclaimer() {
         <Form 
             data={[
                 { name: "Business Name", id: "business-name" },
-                { name: "Website URL", id: "website-url" },
-                { name: "Nature of Information Provided", id: "information-nature" },
-                { name: "No Legal or Professional Advice Disclaimer", id: "no-legal-advice" },
-                { name: "Third-Party Links & Affiliations", id: "third-party-links" },
-                { name: "Limitation of Liability", id: "limitation-liability" },
-                { name: "External Content Disclaimer", id: "external-content" },
-                { name: "Governing Law", id: "governing-law" },
-                { name: "Contact Email", id: "contact-email" }
+                { name: "Website/App Name", id: "app-name" },
+                { name: "Contact Email", id: "contact-email" },
+                { name: "Date", id: "current-date" }
             ]}
             formName="Disclaimer Generator"
         />
