@@ -35,7 +35,7 @@ export default function Contact(){
             <form onSubmit={handleSubmit} className=" w-1/2 flex flex-col items-center justify-center gap-8 border border-background rounded-lg px-4 py-8">
             <div className="text-center flex flex-col items-center gap-4">
             <h1 className="text-4xl font-bold">Contact</h1>
-            <p className="w-1/2 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie facilisis velit. Duis non tellus blandit, auctor elit sit amet, pretium odio. Sed rhoncus, orci vel tincidunt congue.</p>
+            <p className="w-1/2 text-center">Have a question or need support? Fill out the form, and our team will get back to you as soon as possible with the help you need. We’re here to make the process quick and easy!</p>
             </div>
             <div className="flex flex-col w-3/4 gap-4">
             <div className="flex flex-col gap-2">
@@ -50,7 +50,7 @@ export default function Contact(){
             <label htmlFor="message">Message</label>
             <input value={data.message} onChange={handleChange} id="message" className="border border-primary rounded-lg h-36 text-black p-2"/>
             </div>
-            <button className="bg-primary h-10 text-white rounded-lg">Send Message</button>
+            <button className="bg-primary h-10 text-white rounded-lg">Send</button>
             </div>
             </form>
             {done?"Thank You":null}

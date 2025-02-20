@@ -31,15 +31,15 @@ export default function Form({data,formName}){
     return (
         <div className="flex flex-col justify-center items-center">
         {!done?
-        <form onSubmit={handleSubmit} className="w-4/5 px-24 p-4 py-24 flex flex-col gap-8 justify-center items-center">
-        <div className="w-3/4 h-5/6 border border-background rounded-lg p-4 flex flex-col gap-8 justify-center items-center">
+        <form onSubmit={handleSubmit} className="w-4/5 p-4 py-24 flex flex-col gap-8 justify-center items-center">
+        <div className="w-1/2 h-5/6 border border-background rounded-lg px-10 py-10 flex flex-col gap-8 justify-center items-center">
         <h1 className="text-xl font-bold">{formName}</h1>
         <div className="rounded-lg w-full flex flex-col gap-4 items-center">
             {data.map(current=>{
-                return <div className="flex flex-col w-1/2" key={current.id}><label htmlFor={current.id}>{current.name}</label><input required name={current.id} className="h-10 border border-primary rounded-lg px-2 text-black w-full" id={current.id}/></div>
+                return <div className="flex flex-col w-full" key={current.id}><label htmlFor={current.id}>{current.name}</label><input required name={current.id} className="h-10 border border-primary rounded-lg px-2 text-black w-full" id={current.id}/></div>
             })}
         </div>
-        <button className="w-1/2 bg-primary text-white h-10 rounded-lg hover:bg-hover">Submit</button>
+        <button className="w-full bg-primary text-white h-10 rounded-lg hover:bg-hover">Submit</button>
         </div>
         </form>
         :

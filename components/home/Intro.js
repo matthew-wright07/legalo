@@ -5,12 +5,12 @@ export default function Intro(){
             <h1 className="text-6xl font-bold text-primary">Legal Made Simple</h1>
             <p className="text-xl">Legal documents don’t have to be complicated. With our tool, you can generate clear, professional agreements in minutes, no legal jargon, no hassle. Just simple, reliable documents tailored to your needs.</p>
             <div className="flex items-center gap-4">
-            <a href="" className="h-12 w-32 bg-primary text-white flex justify-center items-center rounded-lg hover:bg-hover">Start</a>
-            <a href="" className="h-12 w-32 border border-primary text-primary flex justify-center items-center rounded-lg">Learn More</a>
+            <a href="/pricing" className="h-12 w-32 bg-primary text-white flex justify-center items-center rounded-lg hover:bg-hover">Start</a>
+            <a href="/contact" className="h-12 w-32 border border-primary text-primary flex justify-center items-center rounded-lg">Learn More</a>
             </div>
         </div>
         <div>
-            <img src="/logo.png" className="w-80 h-80"/>
+            <img src="/simplify.png" className="w-80 h-80"/>
         </div>
         </div>
     )
