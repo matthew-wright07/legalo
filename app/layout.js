@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import "./globals.css";
 import Footer from "@/components/layout/Footer";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: "Legalo",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <Header/>
         {children}
         <Footer/>
+        <Analytics />
       </body>
     </html>
   );

@@ -20,7 +20,7 @@ export default async function Header() {
       <ul className="flex gap-4 justify-center items-center">
         <li><a className="hover:text-primary" href="/">Home</a></li>
         <DropDown/>
-        <li><a className="hover:text-primary" href="/pricing">Pricing</a></li>
+        <li><a className="hover:text-primary" href="/about">About</a></li>
         <li><a className="hover:text-primary" href="/contact">Contact</a></li>
       </ul>
       <div className="flex gap-4 justify-center items-center">

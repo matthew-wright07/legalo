@@ -34,9 +34,8 @@ export default function UserDropDown({data}){
           </svg>
           </div>
           {clicked?
-          <div className="absolute top-20 bg-white w-32 h-32 shadow-md rounded-b-lg flex flex-col items-center text-primary justify-between">
-            <a className="hover:bg-background w-full flex justify-center items-center h-1/2" href="https://billing.stripe.com/p/login/test_00gdUWd7F9Gmdd6288">Settings</a>
-            <button className="hover:bg-background w-full flex justify-center items-center h-1/2" onClick={signOut}>Sign Out</button>
+          <div className="absolute top-20 bg-white w-32 h-16 shadow-md rounded-b-lg flex flex-col items-center text-primary justify-between">
+            <button className="hover:bg-background w-full flex justify-center items-center h-full" onClick={signOut}>Sign Out</button>
           </div>
           :
           null

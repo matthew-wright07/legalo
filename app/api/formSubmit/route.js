@@ -7,10 +7,7 @@ export async function POST(req){
     try{
     const supabase = createServerComponentClient({ cookies: () => cookieStore });
     const user = await supabase.auth.getUser();
-    const email = user.data.user.email;
-
-    const isAuthResponse = await supabase.from("Paying").select("*").ilike("email", email).single(); 
-    const isAuth = isAuthResponse.data.paying;
+    const isAuth = user.data.user.role==="authenticated";
 
     if (isAuth===true){
     const data = await req.json();
@@ -34,9 +31,9 @@ export async function POST(req){
         return new Response(JSON.stringify(functions.generateTermsOfService(data.data)))
     }
 }else{
-    return new Response(JSON.stringify({body:"/pricing"}))
+    return new Response(JSON.stringify({body:"/signUp"}))
 }
 }catch{
-    return new Response(JSON.stringify({body:"/pricing"}))
+    return new Response(JSON.stringify({body:"/signUp"}))
 }
 }

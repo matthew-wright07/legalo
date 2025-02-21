@@ -17,11 +17,11 @@ export default function Form({data,formName}){
         })
         const usable = await response.json();
         console.log("Usable Response:", usable);
-        if (usable.body!=="/pricing"){
+        if (usable.body!=="/signUp"){
             setResponse(usable)
             setDone(true);
         }else{
-            router.push("/pricing")
+            router.push("/signUp")
         }
         
     }
