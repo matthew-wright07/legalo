@@ -31,8 +31,8 @@ export default function Form({data,formName}){
     return (
         <div className="flex flex-col justify-center items-center">
         {!done?
-        <form onSubmit={handleSubmit} className="w-4/5 p-4 py-24 flex flex-col gap-8 justify-center items-center">
-        <div className="w-1/2 h-5/6 border border-background rounded-lg px-10 py-10 flex flex-col gap-8 justify-center items-center">
+        <form onSubmit={handleSubmit} className="w-full md:w-4/5 p-4 py-24 flex flex-col gap-8 justify-center items-center">
+        <div className="w-3/4 h-5/6 border border-background rounded-lg px-10 py-10 flex flex-col gap-8 justify-center items-center">
         <h1 className="text-xl font-bold">{formName}</h1>
         <div className="rounded-lg w-full flex flex-col gap-4 items-center">
             {data.map(current=>{

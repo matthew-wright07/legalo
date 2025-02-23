@@ -9,7 +9,7 @@ export default async function Header() {
     const { data, error } = await supabase.auth.getUser();
 
   return (
-    <div className="flex justify-between px-24 h-20 items-center shadow-md">
+    <div className="flex justify-between px-24 items-center shadow-md flex-wrap py-8 gap-4">
       <a className="flex gap-2 items-center justify-center" href="/">
         <img
           src="/logo.png"

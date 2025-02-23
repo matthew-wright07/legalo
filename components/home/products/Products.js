@@ -4,7 +4,7 @@ export default function Products(){
     return(
         <div className="flex flex-col px-24 py-16 gap-12">
         <h1 className="text-4xl font-bold text-primary text-center">Our Products</h1>
-        <div className="grid grid-cols-4">
+        <div className="grid lg:grid-cols-4 grid-cols-2">
             <Card heading="Cookie Generator" description="A cookie policy ensures transparency, builds trust with users, and keeps your website compliant with privacy laws like GDPR and CCPA." src="/cookie.png"/>
             <Card heading="Terms Of Service Generator" description="Terms of Service protect your business by setting clear rules, limiting liability, and ensuring legal compliance while building trust with users." src="/terms.png"/>
             <Card heading="Subscription Generator" description="Subscription Terms outline billing, cancellations, refunds, and user obligations, ensuring clarity and legal protection for both you and your customers." src="/subscriptions.png"/>

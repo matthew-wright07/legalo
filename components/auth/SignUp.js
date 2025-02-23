@@ -23,9 +23,9 @@ export default function SignIn(){
         router.refresh();
     }
     return(
-        <div className="h-[70vh] flex items-center justify-center flex-col gap-4">
+        <div className="flex items-center justify-center flex-col gap-4 py-32">
             <h1 className="text-2xl font-bold">Sign Up</h1>
-            <div className="w-1/4 bg-white rounded-lg flex flex-col p-6 gap-8 border">
+            <div className="w-3/4 md:w-1/3 bg-white rounded-lg flex flex-col p-6 gap-8 border">
             <div className="flex flex-col gap-4">
             <label htmlFor="email">Email</label>
             <input type="email" onChange={handleChange} value={data.email} className="h-10 border border-primary rounded-lg px-2" id="email" name="email"/>

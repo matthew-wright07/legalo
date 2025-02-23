@@ -33,7 +33,7 @@ You can reach out to us through our contact form, and we’ll get back to you as
     return(
         <div className="py-24 flex flex-col items-center justify-center gap-8">
             <h1 className="text-center text-4xl font-bold">FAQS</h1>
-            <div className="border border-background p-8 h-1/2 w-1/2">
+            <div className="border border-background p-8 h-1/2 w-4/5">
             <p className="whitespace-break-spaces">{faqs}</p>
             </div>
         </div>

@@ -32,7 +32,7 @@ export default function Contact(){
     }
     return (
         <div className="w-full flex flex-col items-center justify-center gap-8 py-8">
-            <form onSubmit={handleSubmit} className=" w-1/2 flex flex-col items-center justify-center gap-8 border border-background rounded-lg px-4 py-8">
+            <form onSubmit={handleSubmit} className=" w-3/4 flex flex-col items-center justify-center gap-8 border border-background rounded-lg px-4 py-8">
             <div className="text-center flex flex-col items-center gap-4">
             <h1 className="text-4xl font-bold">Contact</h1>
             <p className="w-1/2 text-center">Have a question or need support? Fill out the form, and our team will get back to you as soon as possible with the help you need. We’re here to make the process quick and easy!</p>

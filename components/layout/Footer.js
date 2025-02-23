@@ -1,7 +1,7 @@
 export default function Footer(){
     return (
-        <div className="flex flex-col p-4">
-        <div className="flex py-16 justify-evenly">
+        <div className="flex flex-col p-4 flex-wrap">
+        <div className="flex py-16 justify-evenly flex-wrap">
             <a className="justify-self-center flex gap-2 items-center justify-center" href="/">
                 <img
                 src="/logo.png"
@@ -34,8 +34,8 @@ export default function Footer(){
                 <h1 className="text-lg font-bold">Support</h1>
                 <a href="/contact">Contact</a>
                 <a href="/faqs">FAQs</a>
-                <a href="/pricing">Pricing</a>
-                <a href="https://billing.stripe.com/p/login/test_00gdUWd7F9Gmdd6288">Settings</a>
+                <a href="/">Pricing</a>
+                <a href="/">Settings</a>
             </div>
         </div>
         <p className="text-center text-sm">Our documents are for general use and do not constitute legal advice. We are not a law firm, consult a licensed attorney for specific legal needs.</p>
