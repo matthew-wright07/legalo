@@ -13,7 +13,7 @@ At the end of the day, our goal is to empower you with the tools you need to han
     return(
         <div className="py-24 flex flex-col items-center justify-center gap-8">
             <h1 className="text-center text-4xl font-bold">About</h1>
-            <div className="border border-background p-8 h-1/2 w-4/5">
+            <div className="border border-background p-8 h-1/2 w-4/5 rounded-lg">
             <p className="whitespace-break-spaces">{about}</p>
             </div>
         </div>

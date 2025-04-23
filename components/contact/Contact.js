@@ -12,10 +12,6 @@ export default function Contact(){
 
     async function handleSubmit(event){
         event.preventDefault();
-        await fetch("/api/contact",{
-            method:"POST",
-            body:JSON.stringify(data),
-        })
         setData({
             email:"",
             subject:"",

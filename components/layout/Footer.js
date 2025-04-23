@@ -34,8 +34,6 @@ export default function Footer(){
                 <h1 className="text-lg font-bold">Support</h1>
                 <a href="/contact">Contact</a>
                 <a href="/faqs">FAQs</a>
-                <a href="/">Pricing</a>
-                <a href="/">Settings</a>
             </div>
         </div>
         <p className="text-center text-sm">Our documents are for general use and do not constitute legal advice. We are not a law firm, consult a licensed attorney for specific legal needs.</p>
