@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
                 
             ]}
             formName="Privacy Policy Generator"
-            description="Easily create a comprehensive Privacy Policy for your website, app, or business. Perfect for to be used as a shopify privacy policy. Answer a few questions to get a fully customized document that explains how you collect, use, and protect user data, ensuring transparency and compliance with privacy laws."
+            description="Easily create a comprehensive Privacy Policy for your website, app, or business. Perfect for to be used as a shopify privacy policy generator. Answer a few questions to get a fully customized document that explains how you collect, use, and protect user data, ensuring transparency and compliance with privacy laws."
         />
     );
 }
