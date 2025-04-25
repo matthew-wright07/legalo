@@ -15,6 +15,9 @@ export default function termsOfService(){
             { name: "Location Of Business", id: "business-location" },
             { name: "Contact Email", id: "contact-email" },
             { name: "Date", id: "current-date" }
-        ]} formName="Terms of Service Generator"/>
+        ]} 
+        formName="Terms of Service Generator"
+        description="Quickly generate a comprehensive Terms of Service agreement for your website, app, or business. Simply answer a few questions, and get a personalized document that outlines user rights, responsibilities, and guidelines for using your platform, protecting both you and your users."
+        />
     )
 }

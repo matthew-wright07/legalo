@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function Form({data,formName}){
+export default function Form({data,formName, description}){
     const [done,setDone] = useState(false)
     const [response,setResponse] = useState("")
     const router = useRouter();
@@ -51,6 +51,11 @@ export default function Form({data,formName}){
             <button onClick={back} className="w-1/2 h-10 bg-primary rounded-lg text-white">Back</button>
         </div>
         }
+        <div className="w-full md:w-1/2 text-center">
+            <p>
+                {description}
+            </p>
+        </div>
         </div>
     )
 }

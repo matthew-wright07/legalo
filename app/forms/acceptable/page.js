@@ -16,6 +16,7 @@ export default function AcceptableUsePolicy() {
                 { name: "Date", id: "current-date" },
             ]}
             formName="Acceptable Use Policy Generator"
+            description="Easily create a professional Acceptable Use Policy tailored to your business, website, or app. Just answer a few quick questions and get a ready-to-use document that helps protect your platform and set clear expectations for users."
         />
     );
 }

@@ -17,6 +17,7 @@ export default function Disclaimer() {
                 { name: "Date", id: "current-date" }
             ]}
             formName="Disclaimer Generator"
+            description="Create a tailored Disclaimer Policy for your website, app, or business with just a few clicks. Answer simple questions to receive a clear, professional disclaimer that protects you from legal issues and sets the right expectations for your users."
         />
     );
 }

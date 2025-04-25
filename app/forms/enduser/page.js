@@ -16,6 +16,8 @@ export default function EulaForm() {
             { name: "Date", id: "current-date" },
             { name: "Business Location", id: "business-location" }
         ]} 
-        formName="EULA Policy Generator"/>
+        formName="EULA Policy Generator"
+        description="Generate a custom End User License Agreement (EULA) that’s perfectly suited to your software or digital product. Just answer a few quick questions, and get a comprehensive document that outlines the terms, rights, and responsibilities for both you and your users."
+        />
     );
 }

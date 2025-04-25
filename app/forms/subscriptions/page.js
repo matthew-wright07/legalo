@@ -16,6 +16,7 @@ export default function SubscriptionTerms() {
                 { name: "Date", id: "current-date" }
             ]}
             formName="Subscription Terms & Conditions Generator"
+            description="Easily create a subscription policy for your service or product. Answer a few quick questions, and receive a customized policy that outlines billing cycles, cancellations, renewals, and user responsibilities, ensuring transparency and a smooth subscription experience."
         />
     );
 }
