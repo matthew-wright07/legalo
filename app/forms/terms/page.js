@@ -1,5 +1,12 @@
 import Form from "@/components/forms/Form"
 
+export const metadata = {
+    title: "Legalo Terms Of Service Policy Generator",
+    icons: {
+      icon: "/logo.png",
+    },
+  };
+
 export default function termsOfService(){
     return (
         <Form data={[

@@ -2,7 +2,7 @@ import DropDown from "./dropdown/DropDown";
 
 export default async function Header() {
   return (
-    <div className="flex justify-between px-24 items-center shadow-md flex-wrap py-8 gap-4">
+    <div className="flex justify-between px-24 items-center shadow-md flex-wrap py-6 gap-4">
       <a className="flex gap-2 items-center justify-center" href="/">
         <img
           src="/logo.png"

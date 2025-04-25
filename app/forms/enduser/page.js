@@ -1,5 +1,12 @@
 import Form from "@/components/forms/Form";
 
+export const metadata = {
+    title: "Legalo End User Policy Generator",
+    icons: {
+      icon: "/logo.png",
+    },
+  };
+
 export default function EulaForm() {
     return (
         <Form data={[
