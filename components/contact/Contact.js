@@ -46,7 +46,7 @@ export default function Contact(){
             <label htmlFor="message">Message</label>
             <input value={data.message} onChange={handleChange} id="message" className="border border-primary rounded-lg h-36 text-black p-2"/>
             </div>
-            <button className="bg-primary h-10 text-white rounded-lg">Send</button>
+            <button className="bg-primary h-10 text-white rounded-lg hover:bg-hover">Send</button>
             </div>
             </form>
             {done?"Thank You":null}

@@ -1,6 +1,6 @@
 export default function Footer(){
     return (
-        <div className="flex flex-col p-4 flex-wrap">
+        <footer className="flex flex-col p-4 flex-wrap">
         <div className="flex py-16 justify-evenly flex-wrap">
             <a className="justify-self-center flex gap-2 items-center justify-center" href="/">
                 <img
@@ -37,6 +37,6 @@ export default function Footer(){
             </div>
         </div>
         <p className="text-center text-sm">Our documents are for general use and do not constitute legal advice. We are not a law firm, consult a licensed attorney for specific legal needs.</p>
-        </div>
+        </footer>
     )
 }

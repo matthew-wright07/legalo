@@ -41,6 +41,11 @@ export default function Form({data,formName, description}){
         </div>
         <button className="w-full bg-primary text-white h-10 rounded-lg hover:bg-hover">Submit</button>
         </div>
+        <div className="w-full md:w-1/2 text-center">
+            <p>
+                {description}
+            </p>
+        </div>
         </form>
         :
         <div className="w-4/5 px-24 flex flex-col gap-4 justify-center items-center py-24">
@@ -51,11 +56,6 @@ export default function Form({data,formName, description}){
             <button onClick={back} className="w-1/2 h-10 bg-primary rounded-lg text-white">Back</button>
         </div>
         }
-        <div className="w-full md:w-1/2 text-center">
-            <p>
-                {description}
-            </p>
-        </div>
         </div>
     )
 }
