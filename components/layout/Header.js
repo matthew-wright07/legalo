@@ -1,6 +1,6 @@
 import DropDown from "./dropdown/DropDown";
 
-export default async function Header() {
+export default function Header() {
   return (
     <header className="flex justify-between px-24 items-center shadow-md flex-wrap py-4 gap-4">
       <a className="flex gap-2 items-center justify-center" href="/">
