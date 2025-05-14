@@ -1,6 +1,6 @@
 export default function WhyUs(){
     return (
-        <div className="grid lg:grid-cols-3 grid-cols-1 py-20 gap-12 px-14">
+        <div className="grid lg:grid-cols-3 grid-cols-1 py-16 gap-12 px-24">
             <div className="w-full bg-primary text-white h-full rounded-lg p-8 flex flex-col justify-center items-center text-center gap-4">
                 <img src="/fast.png" className="w-20 h-20"/>
                 <h1 className="text-3xl font-bold">Fast And Hassle Free</h1>

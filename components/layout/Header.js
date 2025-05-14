@@ -2,7 +2,7 @@ import DropDown from "./dropdown/DropDown";
 
 export default async function Header() {
   return (
-    <header className="flex justify-between px-24 items-center shadow-md flex-wrap py-6 gap-4">
+    <header className="flex justify-between px-24 items-center shadow-md flex-wrap py-4 gap-4">
       <a className="flex gap-2 items-center justify-center" href="/">
         <img
           src="/logo.png"
@@ -17,7 +17,7 @@ export default async function Header() {
         <a className="hover:text-primary" href="/contact">Contact</a>
       </nav>
       <div className="flex gap-4 justify-center items-center">
-        <a href="/forms" className="h-12 w-32 bg-primary text-white flex justify-center items-center rounded-lg hover:bg-hover">Start</a>
+        <a href="/forms" className="h-12 w-28 bg-primary text-white flex justify-center items-center rounded-lg hover:bg-hover">Start</a>
       </div>
     </header>
   );

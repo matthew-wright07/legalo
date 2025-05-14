@@ -2,7 +2,7 @@ import Card from "./Card"
 
 export default function Products(){
     return(
-        <div className="flex flex-col px-24 py-16 gap-12">
+        <div className="flex flex-col px-24 py-12 gap-12">
         <h1 className="text-4xl font-bold text-primary text-center">Our Products</h1>
         <div className="grid lg:grid-cols-4 grid-cols-2">
             <Card href="/forms/cookies" heading="Cookie Generator" description="A cookie policy ensures transparency, builds trust with users, and keeps your website compliant with privacy laws like GDPR and CCPA." src="/cookie.png"/>

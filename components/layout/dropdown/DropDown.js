@@ -22,7 +22,7 @@ export default function DropDown(){
             >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-            <div className={`shadow-md border border-top px-24 py-8 grid grid-cols-2 lg:grid-cols-4 grid-rows-2 w-10 bg-white absolute top-24 left-0 w-full justify-center items-center gap-4 ${clicked?"block":"hidden"}`}>
+            <div className={`shadow-md border border-top px-24 py-8 grid grid-cols-2 lg:grid-cols-4 grid-rows-2 w-10 bg-white absolute top-20 left-0 w-full justify-center items-center gap-4 ${clicked?"block":"hidden"}`}>
 
             <Card href="/forms/cookies" src="/cookie.png" heading="Cookie Policy Generator"/>
 
