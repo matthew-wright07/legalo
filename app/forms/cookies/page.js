@@ -17,7 +17,7 @@ export default function CookiePolicy() {
             { name: "Date", id: "current-date" }
         ]}
             formName="Cookie Policy Generator"
-            description="Quickly generate a detailed and compliant Cookie Policy for your website or app. Simply fill out a few prompts, and you'll receive a policy that informs users about the types of cookies you use, how they’re managed, and ensures you meet legal requirements."
+            description="Use our Cookie Policy Generator to quickly generate a detailed and compliant Cookie Policy for your website or app. Simply fill out a few prompts, and you'll receive a Cookie Policy that informs users about the types of cookies you use, how they’re managed, and ensures you meet legal requirements."
         />
     );
 }

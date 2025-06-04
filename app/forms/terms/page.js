@@ -17,7 +17,7 @@ export default function termsOfService(){
             { name: "Date", id: "current-date" }
         ]} 
         formName="Terms of Service Generator"
-        description="Quickly generate a comprehensive Terms of Service agreement for your website, app, or business. Simply answer a few questions, and get a personalized document that outlines user rights, responsibilities, and guidelines for using your platform, protecting both you and your users."
+        description="Quickly generate a comprehensive Terms of Service agreement for your website, app, or business with our Terms of Service Generator. Simply answer a few questions, and get a personalized Terms of Service Policy that outlines user rights, responsibilities, and guidelines for using your platform, protecting both you and your users."
         />
     )
 }

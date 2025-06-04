@@ -19,7 +19,7 @@ export default function ReturnRefundPolicy() {
                 { name: "Business Location", id: "business-location" },
             ]}
             formName="Return & Refund Policy Generator"
-            description="Generate a customized Returns Policy that sets clear guidelines for product returns, exchanges, and refunds. Simply answer a few questions, and receive a policy tailored to your business, helping to build trust with your customers while protecting your interests."
+            description="Generate a customized Returns Policy that sets clear guidelines for product returns, exchanges, and refunds with our Return and Refund Policy Generator. Simply answer a few questions, and receive a Return and Refund Policy tailored to your business, helping to build trust with your customers while protecting your interests."
         />
     );
 }
