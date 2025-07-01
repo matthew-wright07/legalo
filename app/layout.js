@@ -6,7 +6,7 @@ import { Analytics } from '@vercel/analytics/next';
 export const metadata = {
   title: "Legalo",
   icons: {
-    icon: "/logo.png",
+    icon: "/logo.svg",
   },
   description: "Legal documents don’t have to be complicated. With our tool, you can generate clear, professional agreements in minutes, no legal jargon, no hassle. Just simple, reliable documents tailored to your needs."
 };

@@ -4,7 +4,7 @@ export default function Footer(){
         <div className="flex py-16 px-24 justify-between flex-wrap">
             <a className="justify-self-center flex gap-2 items-center justify-center" href="/">
                 <img
-                src="/logo.png"
+                src="/logo.svg"
                 className="h-10 w-10"
                 />
                 <h1 className="text-3xl font-bold text-primary">Legalo</h1>

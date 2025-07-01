@@ -5,7 +5,7 @@ export default function Header() {
     <header className="flex justify-between px-24 items-center shadow-md flex-wrap py-4 gap-4">
       <a className="flex gap-2 items-center justify-center" href="/">
         <img
-          src="/logo.png"
+          src="/logo.svg"
           className="h-10 w-10"
         />
         <h1 className="text-3xl font-bold text-primary">Legalo</h1>
