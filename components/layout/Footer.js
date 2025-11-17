@@ -37,7 +37,6 @@ export default function Footer(){
             </div>
         </div>
         <p className="text-center text-sm">Our documents are for general use and do not constitute legal advice. We are not a law firm, consult a licensed attorney for specific legal needs.</p>
-        <p className="text-center text-sm">Made By <a className="underline" href="https://webity.io" target="_blank">Webity</a></p>
         </footer>
     )
 }

@@ -3,7 +3,7 @@ import Form from "@/components/forms/Form";
 export const metadata = {
     title: "Legalo Cookie Policy Generator",
     icons: {
-      icon: "/logo.png",
+      icon: "/logo.svg",
     },
   };
 

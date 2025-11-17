@@ -3,7 +3,7 @@ import Form from "@/components/forms/Form";
 export const metadata = {
     title: "Legalo Subscriptions Policy Generator",
     icons: {
-      icon: "/logo.png",
+      icon: "/logo.svg",
     },
   };
 
